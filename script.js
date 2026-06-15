@@ -184,7 +184,7 @@ function confirmBooking() {
     }
 
     // 3. Create WhatsApp Message
-    const message = `Hello RRC HIVE, I would like to book a meeting room:
+    const message = `Hello RRC NEXUS, I would like to book a meeting room:
             - Name: ${name}
             - Room: ${room}
             - Date: ${date}
