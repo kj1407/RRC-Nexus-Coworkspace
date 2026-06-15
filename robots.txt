@@ -1,4 +1,16 @@
+# robots.txt for https://rrcnexus.com/
+# Optimized for Search Engine Crawlers and Indexing efficiency
+
 User-agent: *
 Allow: /
+Allow: /index.html
+Allow: /Gallery.html
+Allow: /Booking.html
+Allow: /assets/images/
 
-Sitemap: https://kj1407.github.io/RRC-coworkspace/sitemap.xml
+# Disallow specific configuration files and individual favicons to save crawl budget
+Disallow: /site.webmanifest
+Disallow: /favicon.ico
+
+# XML Sitemap Location
+Sitemap: https://rrcnexus.com/sitemap.xml
