@@ -5,11 +5,15 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://rrcnexus.com/gallery</loc>
+        <loc>https://rrcnexus.com/Gallery</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://rrcnexus.com/booking</loc>
+        <loc>https://rrcnexus.com/Booking</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://rrcnexus.com/Book-Free-Visit</loc>
         <priority>0.8</priority>
     </url>
 </urlset>
