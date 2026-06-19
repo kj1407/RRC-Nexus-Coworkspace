@@ -7,10 +7,8 @@ Allow: /index.html
 Allow: /Gallery.html
 Allow: /Booking.html
 Allow: /assets/images/
-
-# Disallow specific configuration files and individual favicons to save crawl budget
-Disallow: /site.webmanifest
-Disallow: /favicon.ico
+Allow: /site.webmanifest
+Allow: /favicon.ico
 
 # XML Sitemap Location
 Sitemap: https://rrcnexus.com/sitemap.xml
