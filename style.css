@@ -1460,3 +1460,62 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Container Layout */
+.marquee-strip {
+  width: 100%;
+  overflow: hidden;
+  background: #123658; /* Corporate Blue Brand Color */
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #f8a619; /* Amber/Yellow Accent Boundary */
+  border-bottom: 2px solid #f8a619;
+  white-space: nowrap;
+}
+
+/* Infinite Scrolling Sub-wrapper */
+.marquee-inner {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee-infinite 25s linear infinite;
+  will-change: transform; /* Hardware Acceleration */
+}
+
+/* Elements Formatting */
+.m-item {
+  font-family: 'Poppins', sans-serif, system-ui;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Highlighting the 6PM-6AM Offer */
+.promo-text {
+  color: #f8a619 !important; /* Standout Gold/Amber Text color */
+  font-weight: 800;
+}
+
+/* Interspersed Separator Dot */
+.m-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #f8a619;
+  border-radius: 50%;
+  margin: 0 25px;
+  vertical-align: middle;
+}
+
+/* Keyframe Logic for Seamless Looping loop */
+@keyframes marquee-infinite {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
