@@ -1421,6 +1421,34 @@ html {
     transition: 0.3s ease;
 }
 
+.btn-color-1 {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* The Shimmer effect */
+.btn-color-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: skewX(-25deg);
+    transition: 0.5s;
+}
+
+.btn-color-1:hover::before {
+    left: 150%;
+}
+
+.btn-color-1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(34, 103, 242, 0.3) !important;
+}
+
 /* Hide on mobile to avoid cluttering floating buttons */
 @media (max-width: 992px) {
     .availability-card-fixed {
