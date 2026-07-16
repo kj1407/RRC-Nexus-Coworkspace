@@ -1300,7 +1300,7 @@
                                         <i class="fas fa-code me-2"></i>RRC Technologies</a>
                                 </li>
                                 <li>
-                                    <a href="https://rrctechnologies.com/it-courses/" class="text-decoration-none text-white opacity-75">
+                                    <a href="https://rrctechnologies.com/courses/" class="text-decoration-none text-white opacity-75">
                                         <i class="fas fa-graduation-cap me-2"></i>Training Programs</a>
                                 </li>
                             </ul>
@@ -1373,27 +1373,26 @@
         <script>
             window.addEventListener('scroll', function() {
                 const bookingBtn = document.getElementById('bookingFloat');
-                const heroSection = document.getElementById('heroCarousel');
- 
-                // Calculate the height of the header/hero section
-                const heroHeight = heroSection.offsetHeight;
-
-                if (window.scrollY > heroHeight) {
-                    bookingBtn.classList.add('show');
-                } else {
-                    bookingBtn.classList.remove('show');
-                }
-            });
-        </script>
-        <script>
-            window.addEventListener('scroll', function() {
                 const availabilityCard = document.getElementById('availabilityCard');
-                if (window.scrollY > heroHeight) {
-                    availabilityCard.style.opacity = "1";
-                    availabilityCard.style.visibility = "visible";
-                } else {
-                    availabilityCard.style.opacity = "0";
-                    availabilityCard.style.visibility = "hidden";
+                const heroSection = document.getElementById('heroCarousel');
+                const heroHeight = heroSection ? heroSection.offsetHeight : 0;
+
+                if (bookingBtn) {
+                    if (window.scrollY > heroHeight) {
+                        bookingBtn.classList.add('show');
+                    } else {
+                        bookingBtn.classList.remove('show');
+                    }
+                }
+
+                if (availabilityCard) {
+                    if (window.scrollY > heroHeight) {
+                        availabilityCard.style.opacity = "1";
+                        availabilityCard.style.visibility = "visible";
+                    } else {
+                        availabilityCard.style.opacity = "0";
+                        availabilityCard.style.visibility = "hidden";
+                    }
                 }
             });
         </script>
