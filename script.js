@@ -232,18 +232,6 @@ function countUp(el, target, suffix = "+") {
     window.requestAnimationFrame(step);
 }
 
-navLinks.forEach((link) => {
-    link
-        .classList
-        .remove('active'); // Remove from all
-    // Add only to the one matching the current section ID
-    if (link.getAttribute('href').includes(current)) {
-        link
-            .classList
-            .add('active');
-    }
-});
-
 // Get all nav links
 const navLinks = document.querySelectorAll('.nav-link');
 
